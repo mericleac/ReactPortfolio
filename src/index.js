@@ -3,7 +3,8 @@ import ReactDOM from "react-dom";
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 
 
@@ -28,6 +29,7 @@ const Index = () => (
         <Route path="/skills">
           <SkillsView />
         </Route>
+        <Redirect to="/home" />
       </Switch>
     </div>
   </Router>
