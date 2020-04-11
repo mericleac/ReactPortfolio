@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = ({ routes }) => (
     <div>
         {routes.map(({ href, label }) => (
-            <a href={href}>{label}</a>
+            <Link to={href}>{label}</Link>
         ))}
     </div>
 );
