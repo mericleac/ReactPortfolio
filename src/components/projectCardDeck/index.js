@@ -40,10 +40,10 @@ const ProjectCardDeck = ({ projectList }) => {
                 <button type="button" className="close" aria-label="Close" onClick={hideModal}>
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <img
-                  src={modalProject.image && modalProject.image.src}
-                  alt={modalProject.image && modalProject.image.name}
-                />
+                { modalProject.image && <img
+                  src={modalProject.image}
+                  alt={modalProject.title}
+                />}
                 <Paragraph text={modalProject.description} />
             </Modal>
         </div>
