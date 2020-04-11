@@ -1,5 +1,6 @@
 import Title from './title';
 import Paragraph from './paragraph';
+import List from './list';
 import NavBar from './navbar';
 import ProjectCard from './projectCard';
 import ProjectCardDeck from './projectCardDeck';
@@ -9,12 +10,14 @@ export default {
     Paragraph,
     NavBar,
     ProjectCard,
-    ProjectCardDeck
+    ProjectCardDeck,
+    List
 };
 export {
     Title,
     Paragraph,
     NavBar,
     ProjectCard,
-    ProjectCardDeck
+    ProjectCardDeck,
+    List
 };

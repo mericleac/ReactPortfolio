@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { NavBar, Title, Paragraph, ProjectCardDeck } from './components';
+import { NavBar, Title, Paragraph, ProjectCardDeck, List } from './components';
 
 const Index = () => {
   const loremIpsum = `
@@ -37,11 +37,19 @@ const Index = () => {
     }
   ];
 
+  const itemList = [
+    'apple',
+    'orange',
+    'pear',
+    'peach'
+  ]
+
   return (<div>
     <NavBar routes={routes} />
     <Title text="Hello React!" size={42} />
     <Paragraph text={loremIpsum} />
     <ProjectCardDeck projectList={projectCards} />
+    <List items={itemList} />
   </div>);
 };
 
