@@ -23,8 +23,9 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "react": "^16.5.2",
+    "react": "16.7.0-alpha.0",
     "react-bootstrap": "^1.0.0",
-    "react-dom": "^16.5.2"
+    "react-dom": "16.7.0-alpha.0",
+    "react-modal": "^3.11.2"
   }
 }
