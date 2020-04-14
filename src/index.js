@@ -7,6 +7,7 @@ import {
   Redirect
 } from "react-router-dom";
 
+import './index.css';
 
 import { NavBar } from './components';
 import content from './content.json';

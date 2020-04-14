@@ -12,7 +12,7 @@ const ProjectCard = ({ image, title, description, selectProject }) => {
     return (
     <div onClick={handleClick}>
         { image && <img src={image} alt={title} />}
-        <Title text={title} size={24} />
+        <Title text={title} size={2} />
         <Paragraph text={description} />
     </div>
 )};
