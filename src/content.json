@@ -1,17 +1,17 @@
 {
     "title": "Mandy Mericle",
-    "description": "Software Engineer, Web Designer, Full Stack Developer. I help people create content that looks great and conveys meaning. I am currently available for freelance work, reach out via the content page or through one of the links below and lets get started on your next big project.",
+    "description": "Software Engineer, Web Designer, Full Stack Developer. I help people create content that looks great and conveys meaning. I am currently available for freelance work, reach out through one of the links below and lets get started on your next big project.",
     "routes": [
         { "href": "/home", "label": "Home" },
         { "href": "/projects", "label": "Projects" },
         { "href": "/skills", "label": "About Me" }
     ],
-    "socialMedia": [
-        { "name": "linkedIn", "href": "" },
-        { "name": "upwork", "href": "" },
-        { "name": "fiverr", "href": "" },
-        { "name": "twitter", "href": "" }
-    ],
+    "socialMedia": {
+        "linkedIn": "",
+        "upwork": "",
+        "fiverr": "",
+        "twitter": ""
+    },
     "projects": [
         {
             "title": "Crime Mapper",

@@ -1,4 +1,5 @@
 import React from "react";
+import styled from 'styled-components';
 
 import Title from '../title';
 import Paragraph from '../paragraph';
@@ -10,12 +11,21 @@ const ProjectCard = ({ image, title, description, selectProject }) => {
     };
 
     return (
-    <div onClick={handleClick}>
-        { image && <img src={image} alt={title} />}
-        <Title text={title} size={2} />
-        <Paragraph text={description} />
-    </div>
+    <Card onClick={handleClick}>
+        <div>
+            { image && <img src={image} alt={title} />}
+        </div>
+        <div>
+            <Title text={title} size={2} />
+            <Paragraph text={description} size={1} />
+        </div>
+    </Card>
 )};
+
+const Card = styled.div`
+    display: flex;
+    flex-direction: row;
+`;
 
 export default ProjectCard;
 export { ProjectCard };
