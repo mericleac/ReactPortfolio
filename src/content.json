@@ -1,0 +1,83 @@
+{
+    "title": "Mandy Mericle",
+    "description": "Software Engineer, Web Designer, Full Stack Developer. I help people create content that looks great and conveys meaning. I am currently available for freelance work, reach out via the content page or through one of the links below and lets get started on your next big project.",
+    "routes": [
+        { "href": "/home", "label": "Home" },
+        { "href": "/projects", "label": "Projects" },
+        { "href": "/skills", "label": "About Me" }
+    ],
+    "socialMedia": [
+        { "name": "linkedIn", "href": "" },
+        { "name": "upwork", "href": "" },
+        { "name": "fiverr", "href": "" },
+        { "name": "twitter", "href": "" }
+    ],
+    "projects": [
+        {
+            "title": "Crime Mapper",
+            "description": "Dashboard that tracks crime across the Chicago area. Includes map and graph visualizations based on time, location, and other statistics.",
+            "skills": [
+                "Javascript",
+                "Node",
+                "Angular",
+                "MongoDB",
+                "Google Maps API"
+            ],
+            "image": "static/projects/crimeMapper.png"
+        },
+        {
+            "title": "GigBook",
+            "description": "Hiring platform that connects Musicians to Gigs. Includes an interface for searching for musicians and a negotiation system for managing pay, location, and duration of the gig.",
+            "skils": [
+                "JavaScript",
+                "Angular",
+                ".NET",
+                "C#"
+            ],
+            "image": "static/projects/gigBook.png"
+        },
+        {
+            "title": "Train Tracker",
+            "description": "Tracks CTA trains. Displays information about location, arrival times, and delays for each train in the CTA system.",
+            "skills": [
+                "Vue.js",
+                "jQuery",
+                ".NET",
+                "C#"
+            ],
+            "image": "static/projects/trainTracker.png"
+        }
+    ],
+    "resume": {
+        "Front End": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "jQuery",
+            "Bootstrap",
+            "React",
+            "Angular",
+            "Vue.js"
+        ],
+        "Back End": [
+            "Python",
+            "Django",
+            "Flask",
+            "Web2py",
+            "C#",
+            ".NET",
+            "Node"
+        ],
+        "DataBase": [
+            "MySQL",
+            "MongoDB",
+            "SQLite"
+        ],
+        "Other": [
+            "AWS Cloud Computing (Lambda, EC2, S3)",
+            "Git and GitHub",
+            "R",
+            "Jupyter Notebooks"
+        ]
+    }
+}
