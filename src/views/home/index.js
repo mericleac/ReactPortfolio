@@ -10,24 +10,33 @@ import fiverr from '../../static/images/fiverr.svg';
 import upwork from '../../static/images/upwork.svg';
 import twitter from '../../static/images/twitter.svg';
 
+import '../../index.css';
+
 const HomeView = () => (
-    <div style={{ display: 'flex' }}>
-        <FlexDiv flex="3">
-            <Title text={content.title} size={4.5} />
-            <StyledHR />
-            <Paragraph text={content.description} size={1.2} />
-            <SocialMediaLinkContainer>
-                <a href={content.socialMedia.linkedIn}><SocialMediaLink src={linkedIn} alt="LinkedIn" /></a>
-                <a href={content.socialMedia.fiverr}><SocialMediaLink src={fiverr} alt="Fiverr" /></a>
-                <a href={content.socialMedia.upwork}><SocialMediaLink src={upwork} href={content.socialMedia.upwork} alt="Upwork" /></a>
-                <a href={content.socialMedia.twitter}><SocialMediaLink src={twitter} href={content.socialMedia.twitter} alt="Twitter" /></a>
-            </SocialMediaLinkContainer>
-        </FlexDiv>
-        <FlexDiv flex="2">
-            <StyledImage src={logo} alt="Mandy Mericle" />
-        </FlexDiv>
+    <div>
+        <Main>
+            <FlexDiv flex="3">
+                <Title text={content.title} size={4} />
+                <StyledHR />
+                <Paragraph text={content.description} size={1.2} />
+                <SocialMediaLinkContainer>
+                    <a href={content.socialMedia.linkedIn}><SocialMediaLink src={linkedIn} alt="LinkedIn" /></a>
+                    <a href={content.socialMedia.fiverr}><SocialMediaLink src={fiverr} alt="Fiverr" /></a>
+                    <a href={content.socialMedia.upwork}><SocialMediaLink src={upwork} href={content.socialMedia.upwork} alt="Upwork" /></a>
+                    <a href={content.socialMedia.twitter}><SocialMediaLink src={twitter} href={content.socialMedia.twitter} alt="Twitter" /></a>
+                </SocialMediaLinkContainer>
+            </FlexDiv>
+            <FlexDiv flex="2">
+                <StyledImage src={logo} alt="Mandy Mericle" />
+            </FlexDiv>
+        </Main>
     </div>
 );
+
+const Main = styled.div`
+    display: flex;
+    padding: 30px;
+`;
 
 const FlexDiv = styled.div`
     flex: ${props => props.flex || '1'};
